@@ -1,4 +1,8 @@
-    public class MyJavaFile {
+package com.myJava;
+
+import com.myKotlin.MyFirstKt;
+
+public class MyJavaFile {
 
         public static void main(String[] args)
         {
