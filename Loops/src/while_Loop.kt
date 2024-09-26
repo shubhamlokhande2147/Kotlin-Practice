@@ -19,4 +19,16 @@
             { println(i1)}
             i1++
         }
+
+        //---------------------------------------------
+        //print A-z
+            var letter = 'A'
+
+            while (letter <= 'Z') {
+                print("$letter ")
+                letter++
+
+        }
+
+
     }
