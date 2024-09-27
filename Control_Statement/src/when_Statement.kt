@@ -29,4 +29,46 @@ fun main(args : Array<String>)
         else -> "x is unknown"
     }
     println("str is : $str")
+
+    //-----------------------------------------------------
+    //when to decide what operation to perform
+    println("enter sign : ")
+    val op= readln()
+
+
+    val a1 = 234
+    val b = 23
+
+    when (op) {
+        "+","plus" -> println(a1 + b)
+        "-" -> println(a1 - b)
+        "*" -> println(a1 * b)
+        else -> println("Unknown operator")
+    }
+
+    //----------------------------------
+    //when as expression
+    val result = when (op) {
+        "+" -> a + b
+        "-" -> a - b
+        "*" -> a * b
+        else -> "Unknown operator"
+    }
+    println(result)
+
+    //--------------------------------------------
+    //Branch conditions and ranges
+    println("Enter 3 numbers : ")
+    val (var1, var2, var3) = readln().split(" ")
+
+    val a6 = var1.toInt()
+    val b6 = var2.toInt()
+    val c = var3.toInt()
+
+    println(when (c) {
+        a6 + b6 -> "$c equals $a6 plus $b6"
+        a6 - b6 -> "$c equals $a6 minus $b6"
+        a6 * b6 -> "$c equals $a6 times $b6"
+        else -> "We do not know how to calculate $c"
+    })
 }
