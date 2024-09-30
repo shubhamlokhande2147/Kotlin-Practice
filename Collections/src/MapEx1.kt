@@ -1,6 +1,8 @@
 
 fun main(args : Array<String>)
 {
+    //for immutable map
+
     val students = mapOf(
         "shubham" to 1,
         "om" to 2,
