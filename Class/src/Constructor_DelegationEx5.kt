@@ -18,4 +18,5 @@ fun main() {
     // Create an inner object with the secondary constructor
     var innerObj = Size5(3, 4, outerObj)
     println("Inner object's area: ${innerObj.area}")
+
 }
