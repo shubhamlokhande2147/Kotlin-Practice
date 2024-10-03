@@ -26,7 +26,7 @@ println("Width : ${obj.width} , Height : ${obj.height} and Area : ${obj.area}")
 //default argument
 
 class Size(var width: Int = 1, var height: Int = 1) {
-    val area: Int = width * height
+    var area: Int = width * height
 }
 
 fun main() {
