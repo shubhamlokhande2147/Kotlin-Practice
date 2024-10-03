@@ -1,16 +1,14 @@
-
-
 //class Patient   ..... //it is valid ,because it has empty body
 
 class Patient   //create class
 {
     //declare properties
-    var name : String = "Unknown"
-    var age : Int = 0
-    var height : Double = 0.0
+    var name: String = "Unknown"
+    var age: Int = 0
+    var height: Double = 0.0
 }
-fun main(args : Array<String>)
-{
+
+fun main(args: Array<String>) {
     //first object
     var abc = Patient() //create object
     abc.name = "ABC"
