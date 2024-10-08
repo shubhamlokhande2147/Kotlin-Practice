@@ -1,52 +1,47 @@
-
 //iterating array using loop
 
-fun main(args : Array<String>)
-{
+fun main(args: Array<String>) {
     //iterate with for loop
     println("iterate with for loop")
 
-        val daysOfWeek = arrayOf("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat")
+    val daysOfWeek = arrayOf("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat")
 
-        for (day in daysOfWeek)
-        {
-            println(day)
-        }
+    for (day in daysOfWeek) {
+        println(day)
+    }
 
     println("------------------------------------")
 
     //-----------------------
     //iterate using array.indices property
-     println("iterate using array.indices property")
+    println("iterate using array.indices property")
 
-        val daysOfWeek1 = arrayOf("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat")
+    val daysOfWeek1 = arrayOf("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat")
 
-        for (index in daysOfWeek1.indices)
-        {
-            println("$index: ${daysOfWeek1[index]}")
-        }
+    for (index in daysOfWeek1.indices) {
+        println("$index: ${daysOfWeek1[index]}")
+    }
 
-       println("-----------------------------------")
+    println("-----------------------------------")
 
-     //--------------------------------
-     //Iterating by range indexes
-       println("Iterating by range indexes")
+    //--------------------------------
+    //Iterating by range indexes
+    println("Iterating by range indexes")
 
-         val daysOfWeek2 = arrayOf("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat")
+    val daysOfWeek2 = arrayOf("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat")
 
-         for (index in 1..5)
-         {
-             println("$index: ${daysOfWeek2[index]}")
-         }
+    for (index in 1..5) {
+        println("$index: ${daysOfWeek2[index]}")
+    }
 
-     println("-----------------------------------")
+    println("-----------------------------------")
 
-     //---------------------------------------------
-     //last index
-        println("access array.lastIndex")
-        for (index in 1 until daysOfWeek2.lastIndex) {
-            println("$index: ${daysOfWeek2[index]}")
-        }
+    //---------------------------------------------
+    //last index
+    println("access array.lastIndex")
+    for (index in 1 until daysOfWeek2.lastIndex) {
+        println("$index: ${daysOfWeek2[index]}")
+    }
     println("-----------------------------------")
 
     //---------------------------------------------
@@ -54,7 +49,7 @@ fun main(args : Array<String>)
 
     println("printing reverse array")
     for (index in daysOfWeek2.lastIndex downTo 0)
-       // with step 2 ...    for (index in daysOfWeek2.lastIndex downTo 0 step  2)
+    // with step 2 ...    for (index in daysOfWeek2.lastIndex downTo 0 step  2)
     {
         println("$index: ${daysOfWeek2[index]}")
     }
@@ -68,7 +63,7 @@ fun main(args : Array<String>)
     val array = IntArray(size)
 
     for (i in 0..array.lastIndex) {
-        println("enter no. ${i+1}")
+        println("enter no. ${i + 1}")
         array[i] = readln().toInt()
     }
 
