@@ -1,8 +1,4 @@
-
-
-
-fun main(args : Array<String>)
-{
+fun main(args: Array<String>) {
     //Reading array from input
 
     println("Enter numbers : ")
@@ -41,7 +37,6 @@ fun main(args : Array<String>)
     val numb = setOf(1, 2, 3)
     println(numb.map { it * 3 })
     println(numb.mapIndexed { idx, value -> value * idx })
-
 
 
 }

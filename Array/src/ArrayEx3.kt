@@ -1,7 +1,4 @@
-
-
-fun main(args : Array<String>)
-{
+fun main(args: Array<String>) {
     //Accessing elements
     val numbers = IntArray(3) // numbers: 0, 0, 0
 
