@@ -14,7 +14,6 @@ fun main(args: Array<String>) {
 	runApplication<EventsAndListenersGradleProjApplication>(*args)
 }
 
-
 @Component
 internal class Runner(private val eventPublisher: ApplicationEventPublisher) : CommandLineRunner {
 	override fun run(vararg args: String) {
