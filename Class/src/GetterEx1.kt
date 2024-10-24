@@ -1,19 +1,16 @@
-
 //custom getter
 
 class Client {
     var name: String = "Unknown"
     var age: Int = 18
     var info: String = ""
-        get()
-        {
+        get() {
             return "name = $name, age = $age"
         }
 }
 
 
-fun main()
-{
+fun main() {
     val client = Client()
     println(client.info) // name = Unknown, age = 18
     client.name = "Lester"

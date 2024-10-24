@@ -1,4 +1,3 @@
-
 //custom setter
 //
 //class Client1 {
@@ -33,8 +32,8 @@ class Client2 {
             field = value
         }
 }
-fun main(args : Array<String>)
-{
+
+fun main(args: Array<String>) {
     val client = Client2()
     client.name = "Ann"   // The name is changing. Old value is Unknown. New value is Ann.
     println(client.name)
